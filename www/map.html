@@ -1,0 +1,54 @@
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+<head>
+   
+   
+</head>
+<body> 
+<!--     PAGE Map-------------    -->
+    <div data-role="page" id="pagemap" data-dom-cache="true">
+        <!--     when page map show, call google map script-------------    -->
+         <script async defer 
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5DZc1jUO494ezXxAxSQc5Pa9V4ywTmcU&libraries=places&callback=initMap" 
+            async defer></script>
+        <!--     panel in the left, help to exit or log out-------------    -->
+        <div data-role="panel" data-display="overlay" id="panelMap">
+            <h2 class="panel-username">Panel Header</h2>
+            <div class="imgcontainer">
+                    <img src="img/img_avatar1.png" class="profileImg">
+            </div>
+           <a href="#login" data-role="button" data-transition="pop" class="Change_account" style="border-radius:30px;">Change account</a>
+            
+            <a href="#" data-role="button" onclick="exit()" style="top:10px;border-radius:30px;">Exit</a>
+            <a data-role="button" href="#" data-icon="back" data-rel="close" style="top:200px;border-radius:30px;">Close panel</a>    
+        </div>
+        <!--     Title show page name-------------    -->
+        <div data-role="header" data-theme="b" style="height:60px">
+            <a class="menu ui-btn ui-btn-inline  ui-shadow" href="#panelMap"></a>
+            <h3 style="margin:auto 0;margin-top:10px;">Nearby</h3>
+            <a class="back ui-btn ui-btn-inline  ui-shadow" data-rel="back">Back</a>
+        </div>
+        <!--   google  map function divition-------------    -->
+        <div data-role="main" class="ui-content">
+            <!-- search field     -->
+                <input type="text" id="searchTextField" placeholder="Search Restaurant"/>
+            <!-- map shows in this divition     -->
+                <div id="map" style="height: 350px; width: 100%;"></div> 
+                <hr/>
+            <!--     A button can call onclick function to get my location-------------    -->
+                <a href="#" data-role="button" data-inline="false"  id="myPosition" style="border-radius:30px;">Find where am I</a>  
+        </div>
+        <div ><br/><br/><br/><br/><br/></div>
+        <!--     Navigation in footer-------------    -->
+        <div data-role="footer" data-tap-toggle="false" data-theme="b" data-position="fixed" data-fullscreen="true">
+            <div data-role="controlgroup" style="margin: 0 0;" datatype="horizontal">
+            <a data-role="button" href="#pageone" class="restaurant" data-corners="false" data-transition="slide" data-direction="reverse"></a>
+            <a data-role="button" href="#pagemap" class="map ui-btn-active" data-corners="false" data-transition="none"></a>
+            <a data-role="button" href="#pagetwo" class="reviews" data-corners="false" data-transition="slide"></a>
+            <a data-role="button" href="#pagethree" class="profile" data-corners="false" data-transition="slide"></a>
+            </div>
+        </div>
+    </div>
+</body>

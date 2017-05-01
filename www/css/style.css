@@ -1,0 +1,224 @@
+.ui-page{
+    -webkit-backface-visibility:hidden;
+}
+        
+      /* Optional: Makes the sample page fill the window. */
+      html, body,page {
+        height: 100%;
+        width: 100%;
+        margin: 0 0;
+        padding: 0 0;
+          border: 0;
+      }
+/* page profile  */
+#pagethree body{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* button to open panel   */
+a.menu.ui-btn {
+    border-radius:50%;
+}
+a.menu{
+    content: url(../img/setting.png);
+    float: left;
+    top: 11px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    padding: 0 0;
+}
+/* button to reture front page  */
+a.back.ui-btn{
+    border-radius:30px;
+    top:10px;
+}
+.back{
+    float: right;
+    height: 18px;
+    margin-top: 10px;
+    top: 10px;
+    border-radius: 50%;
+}
+/* button to collect restaurant  */
+a.Like{
+    content: url(../img/like.png);
+    float: left;
+    top: 11px;
+    height: 35px;
+    width: 35px;
+    border-radius: 20%;
+    padding: 0 0;
+}
+
+/* restaurant name list and collection list  */
+
+.ui-content ul{
+    list-style: none;
+    margin:0 0;
+    left:0;
+    padding: 0 0;
+    border: 0;
+}
+/* page show profile list  */
+.taskList li{
+    padding: 10px;
+    margin: 10px;
+}
+#profile ul li {
+    display: block;
+    padding: 0px;
+    margin: 0px;
+}
+/* restaurant list  */
+#rList {
+    font-size: 20px;
+    text-shadow:0 0;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+#rList li{
+    margin-bottom: 1px;
+    display: block;
+    list-style: none;
+    text-transform: pink;
+}
+#rList li:nth-child(2n) {
+  background-color: ghostwhite;
+  
+}
+#rList li:nth-child(2n+1) {
+  background-color: gainsboro;
+}
+/* review list  */
+#Reviews {
+    font-size: 20px;
+    text-shadow:0 0;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+#Reviews li{
+    margin-bottom: 1px;
+    display: block;
+    list-style: none;
+    text-transform: pink;
+}
+#Reviews li:nth-child(2n) {
+  background-color: ghostwhite;
+  
+}
+#Reviews li:nth-child(2n+1) {
+  background-color: gainsboro;
+}
+/* collection list  */
+.rList {
+    font-size: 20px;
+    text-shadow:0 0;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+.rList li{
+    margin-bottom: 1px;
+    display: block;
+    list-style: none;
+    text-transform: pink;
+}
+.rList li:nth-child(2n) {
+  background-color: #FFC000;
+  
+}
+.rList li:nth-child(2n+1) {
+  background-color: lightseagreen;
+}
+/* images style  */
+.img{
+    width: 100%;
+}
+.imgcontainer {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+img.profileImg{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+img.restaurantImg{
+    height: 200px;
+}
+/* username  */
+.title{
+    text-transform: capitalize;
+    font-size: 20px;
+    background:lightblue;
+    margin: 0;
+    padding: 10px;
+    
+}
+/* restaurant name  */
+.restaurantTitle{
+    text-transform: capitalize;
+    font-size: 20px;
+    background:lightblue;
+    margin: 0;
+    padding: 10px;
+    
+}
+/* navigation  */
+.restaurant{
+    content: url(../img/home.png);
+    background-color: black;
+    float: left;
+    height: 50px;
+    width:18%;
+    padding: 0 0;
+    margin: 0 0;
+    border: 0;
+} 
+.map{
+    content: url(../img/location.png);
+    background-color: black;
+    float: left;
+    height: 50px;
+    width: 17%;
+    padding: 0 0;
+    margin: 0 0;
+    border: 0;
+}
+.reviews{
+    content: url(../img/collect.png);
+    background-color: black;
+    float: left;
+    height: 50px;
+    width: 17%;
+    padding: 0 0;
+    margin: 0 0;
+    border: 0;
+}
+.profile{
+    content: url(../img/profile.png);
+    background-color: black;
+    float: left;
+    height: 50px;
+    width: 18%;
+    padding: 0 0;
+    margin: 0 0;
+    border: 0;
+}
+
+[data-role="header"]{
+    margin: 0 0; 
+}
+[data-role="footer"]{
+    margin: 0 0; 
+}
